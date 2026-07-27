@@ -1,0 +1,46 @@
+# =========================
+# Core Framework
+# =========================
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+
+# =========================
+# AI
+# =========================
+langchain
+langgraph
+langchain-groq
+langchain-google-genai
+groq
+openai
+
+# =========================
+# Data Validation
+# =========================
+pydantic
+pydantic-settings
+
+# =========================
+# HTTP
+# =========================
+httpx
+requests
+
+# =========================
+# Image Processing
+# =========================
+Pillow
+opencv-python-headless
+
+# =========================
+# Database
+# =========================
+sqlalchemy
+
+# =========================
+# Utilities
+# =========================
+python-dateutil
+numpy

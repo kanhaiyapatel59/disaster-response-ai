@@ -1,0 +1,46 @@
+{
+  "hospitals": [
+    {
+      "id": "HOSP_001",
+      "name": "City General Hospital",
+      "location": "Mumbai Central",
+      "lat": 19.0760,
+      "lng": 72.8777,
+      "beds_total": 200,
+      "beds_available": 45,
+      "icu_beds": 20,
+      "icu_available": 8,
+      "ambulances": 10,
+      "emergency_contact": "+91-9876543220",
+      "type": "general"
+    },
+    {
+      "id": "HOSP_002",
+      "name": "Andheri Medical Center",
+      "location": "Andheri, Mumbai",
+      "lat": 19.1136,
+      "lng": 72.8697,
+      "beds_total": 150,
+      "beds_available": 25,
+      "icu_beds": 15,
+      "icu_available": 5,
+      "ambulances": 6,
+      "emergency_contact": "+91-9876543221",
+      "type": "general"
+    },
+    {
+      "id": "HOSP_003",
+      "name": "Bandra Trauma Center",
+      "location": "Bandra, Mumbai",
+      "lat": 19.0556,
+      "lng": 72.8401,
+      "beds_total": 100,
+      "beds_available": 10,
+      "icu_beds": 10,
+      "icu_available": 2,
+      "ambulances": 4,
+      "emergency_contact": "+91-9876543222",
+      "type": "trauma"
+    }
+  ]
+}

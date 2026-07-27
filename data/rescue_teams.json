@@ -1,0 +1,56 @@
+{
+  "rescue_teams": [
+    {
+      "id": "TEAM_001",
+      "name": "NDRF Team Alpha",
+      "type": "water_rescue",
+      "location": "Mumbai Base",
+      "lat": 19.0760,
+      "lng": 72.8777,
+      "members": 12,
+      "boats": 4,
+      "vehicles": 2,
+      "status": "available",
+      "specialization": ["boat_rescue", "swift_water", "medical"]
+    },
+    {
+      "id": "TEAM_002",
+      "name": "Fire Brigade Unit 7",
+      "type": "fire_and_rescue",
+      "location": "Andheri Station",
+      "lat": 19.1136,
+      "lng": 72.8697,
+      "members": 8,
+      "boats": 2,
+      "vehicles": 3,
+      "status": "available",
+      "specialization": ["fire_fighting", "boat_rescue"]
+    },
+    {
+      "id": "TEAM_003",
+      "name": "Police Rescue Unit",
+      "type": "general_rescue",
+      "location": "Bandra Police Station",
+      "lat": 19.0556,
+      "lng": 72.8401,
+      "members": 15,
+      "boats": 0,
+      "vehicles": 4,
+      "status": "deployed",
+      "specialization": ["evacuation", "search"]
+    },
+    {
+      "id": "TEAM_004",
+      "name": "NGO Relief Corps",
+      "type": "medical_relief",
+      "location": "Powai Camp",
+      "lat": 19.1176,
+      "lng": 72.9064,
+      "members": 20,
+      "boats": 3,
+      "vehicles": 5,
+      "status": "available",
+      "specialization": ["medical", "food_distribution", "boat_rescue"]
+    }
+  ]
+}

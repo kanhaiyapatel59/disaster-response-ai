@@ -1,0 +1,69 @@
+{
+  "shelters": [
+    {
+      "id": "SHELTER_001",
+      "name": "City Stadium Shelter",
+      "location": "Mumbai Central",
+      "lat": 19.0760,
+      "lng": 72.8777,
+      "capacity": 500,
+      "current_occupancy": 120,
+      "available_spaces": 380,
+      "facilities": ["food", "water", "medical", "toilets", "power"],
+      "contact": "+91-9876543210",
+      "status": "open"
+    },
+    {
+      "id": "SHELTER_002",
+      "name": "Community Hall - Andheri",
+      "location": "Andheri East, Mumbai",
+      "lat": 19.1136,
+      "lng": 72.8697,
+      "capacity": 300,
+      "current_occupancy": 250,
+      "available_spaces": 50,
+      "facilities": ["food", "water", "toilets"],
+      "contact": "+91-9876543211",
+      "status": "open"
+    },
+    {
+      "id": "SHELTER_003",
+      "name": "School Building - Bandra",
+      "location": "Bandra West, Mumbai",
+      "lat": 19.0556,
+      "lng": 72.8401,
+      "capacity": 400,
+      "current_occupancy": 380,
+      "available_spaces": 20,
+      "facilities": ["water", "toilets", "power"],
+      "contact": "+91-9876543212",
+      "status": "at_capacity"
+    },
+    {
+      "id": "SHELTER_004",
+      "name": "Temporary Relief Camp - Powai",
+      "location": "Powai, Mumbai",
+      "lat": 19.1176,
+      "lng": 72.9064,
+      "capacity": 800,
+      "current_occupancy": 150,
+      "available_spaces": 650,
+      "facilities": ["food", "water", "medical", "toilets", "power", "kitchen"],
+      "contact": "+91-9876543213",
+      "status": "open"
+    },
+    {
+      "id": "SHELTER_005",
+      "name": "Municipal Hall - Dadar",
+      "location": "Dadar, Mumbai",
+      "lat": 19.0178,
+      "lng": 72.8478,
+      "capacity": 250,
+      "current_occupancy": 200,
+      "available_spaces": 50,
+      "facilities": ["water", "toilets"],
+      "contact": "+91-9876543214",
+      "status": "open"
+    }
+  ]
+}
