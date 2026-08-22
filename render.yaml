@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: disaster-command-center-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://kanhaiya:patel@foodyham.anqqbp7.mongodb.net/disaster_db?retryWrites=true&w=majority
+      - key: PYTHON_VERSION
+        value: 3.11.0

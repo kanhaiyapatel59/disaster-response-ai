@@ -28,6 +28,13 @@ class Config:
     
     # Database
     DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./disaster.db")
+    MONGO_URI = os.getenv(
+        "MONGO_URI", 
+        os.getenv(
+            "MONGODB_URI", 
+            "mongodb+srv://kanhaiya:patel@foodyham.anqqbp7.mongodb.net/disaster_db?retryWrites=true&w=majority"
+        )
+    )
     
     # Model Settings
     DEFAULT_LLM_MODEL = "llama-3.3-70b-versatile"  # Groq

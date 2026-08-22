@@ -30,11 +30,17 @@ app = FastAPI(
     description="Multi-Agent Disaster Response Command Center"
 )
 
-# CORS configuration for React frontend
+# CORS configuration for React frontend & production deployment
+allowed_origins_env = os.getenv("ALLOWED_ORIGINS", "")
+if allowed_origins_env:
+    origins = [o.strip() for o in allowed_origins_env.split(",") if o.strip()]
+else:
+    origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],  # React dev ports
-    allow_credentials=True,
+    allow_origins=origins,
+    allow_credentials=True if "*" not in origins else False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -323,6 +329,20 @@ async def incident_status():
     }
 
 
+# --- Seed Endpoint ---
+@app.get("/api/seed")
+@app.post("/api/seed")
+async def seed_database():
+    """
+    Seed database (MongoDB Atlas or local fallback) with sample shelters, hospitals, and rescue teams
+    """
+    try:
+        res = database_tool.seed_database()
+        return res
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to seed database: {str(e)}")
+
+
 # --- Health Check Endpoints ---
 @app.get("/")
 async def root():
@@ -346,7 +366,8 @@ async def health_check():
             "google": bool(config.GOOGLE_API_KEY)
         },
         "services": {
-            "database": "sqlite",
+            "database": "MongoDB Atlas" if database_tool.mongo_connected else "Local JSON Fallback",
+            "mongo_connected": database_tool.mongo_connected,
             "upload_dir": str(config.UPLOAD_DIR)
         }
     }
