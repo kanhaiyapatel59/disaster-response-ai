@@ -8,5 +8,11 @@ services:
     envVars:
       - key: MONGO_URI
         value: mongodb+srv://kanhaiya:patel@foodyham.anqqbp7.mongodb.net/disaster_db?retryWrites=true&w=majority
+      - key: GROQ_API_KEY
+        value: gsk_AQ.Ab8RN6L-QZFG_bfecBcLo3fV6_k4UlmiZLDgrG8REjvMcPlVUg
+      - key: OPENWEATHER_API_KEY
+        value: d1c14f51894941b551c264fa245fa531
+      - key: ALLOWED_ORIGINS
+        value: "*"
       - key: PYTHON_VERSION
         value: 3.11.0
